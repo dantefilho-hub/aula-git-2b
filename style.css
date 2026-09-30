@@ -69,13 +69,17 @@ body
     background: #05a2eb;
     width: 2px;
     height: 10px
-    transform-origin: bottom;
+    transform-origin bottom;
     animation: animate 2s linear infinite;
 }
 @keyframes animate
 {
     0%
     {
-        transform
+        transform: translateY(0) scaleY(1);
+    }
+    70%
+    {
+        transform: translateY(360px) scaleY(1);
     }
 }
